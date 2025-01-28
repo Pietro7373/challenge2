@@ -5,35 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../src/output.css">
     <link rel="shortcut icon" href="../src/faviconPN.ico" type="image/x-icon">
-    <title>Document</title>
+    <title>výzva 2</title>
 </head>
 <body>
 
-<section class="min-h-screen flex items-center justify-center font-[Mulish] font-sans  text-[#C4C0FF]">
+<section class="min-h-screen flex items-center justify-center font-[Mulish]  text-[#C4C0FF]">
 
-    <!-- hlavní modrý layout-->
-    <div class="relative flex flex-col justify-center items-start pl-7 w-[350px] h-[480px]  bg-[#121129] rounded-2xl ">
-        <div class="font-bold  text-2xl"><h1>Closest stores</h1></div>
-    
+    <!-- hlavní modrý obdélník -->
+    <div class="z-10 flex flex-col justify-center items-start pl-7 w-[350px] h-[470px]  bg-[#121129] rounded-2xl ">
+     <!-- -NADPIS -->    
+        <div class="font-bold mb-8 text-2xl"><h1>Closest stores</h1></div>
+    <!-- 1.part POSTAL CODE -->  
         <div class="flex">
-            <div class="">
-                <h2 class="text-xs">Postal code</h2>
+            <div>
+                <h2 class="text-xs mb-1">Postal code</h2>
                 <input type="text" value="5055" class="border-2 border-[#2A2753] w-[140px] 
-                rounded-sm h-11 pl-3 ">
+                rounded-sm h-11 pl-3 font-bold">
             </div>
-            <div class="flex items-center justify-center mt-4 ml-3">
+            <!-- -USE MY LOCATION -->
+            <div class="flex items-center justify-center mt-4 ml-5">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#756BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
                 <h2 class="text-[#756BFF] font-bold text-sm ml-2">Use my location</h2>
-
             </div>
-
         </div>
-
-
-
-
-
+    <!-- 2.part POINT --> <!-- -CLOSED- -->
+        <div>
+            <div class="flex items-center mt-5 ">
+                <h2 class="font-bold">POINT Bergen Sentrum</h2>
+                <h2 class="text-white px-1.5 py-0.5 font-bold text-xs bg-[#FF5EAB] rounded-lg ml-16 ">CLOSED</h2>
+            </div>
+                <h2 class="text-sm my-1">Strandagaten 55-57, 6007 Bergen</h2>
+            <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock-4"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <h2 class="text-sm ml-2">9:00 - 19:00</h2>
+            </div>
+            <!-- -OPEN- -->
+            <div class="flex items-center mt-7 ">
+                <h2 class="font-bold">POIVestkanten</h2>
+                <h2 class="text-white px-1.5 py-0.5 font-bold text-xs bg-[#00BD9B] rounded-lg ml-34 ">OPEN</h2>
+            </div>
+                <h2 class="text-sm my-1">Strandagaten 55-57, 6007 Bergen</h2>
+            <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock-4"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <h2 class="text-sm ml-2">9:00 - 21:00</h2>
+            </div>
+        </div>
+    <!-- 3.part button VIEW ALL -->
+        <div class="w-[294px] h-11 text-white font-bold text-sm flex items-center justify-center rounded-sm bg-[#756BFF] mt-8">
+            <button>View all</button></div>
+        
     </div>
+     <!-- část s gradientem -->
+        <div class="absolute">
+            <div class="z-0 w-[350px] h-[350px] mb-50 mr-22  bg-[#9c9bb1] rounded-bl-4xl rounded-tr-4xl 
+            bg-linear-to-br from-[#FF5DAB] to-[#756BFF]"></div>
+        </div>
+       
 </section>
     
 </body>
